@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'form_screen.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
   @override
@@ -69,12 +69,7 @@ class HomeScreen extends StatelessWidget {
                     const SizedBox(height: 32),
                     ElevatedButton.icon(
                       onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const FormScreen(),
-                          ),
-                        );
+                        Navigator.pushNamed(context, '/signup');
                       },
                       icon: const Icon(Icons.arrow_forward),
                       label: const Text(
