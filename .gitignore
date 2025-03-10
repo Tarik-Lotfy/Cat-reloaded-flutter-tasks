@@ -48,3 +48,6 @@ app.*.map.json
 # Ignore old project directories
 /signwithotp/
 /top_designers/
+
+# Ignore accidentally created files
+h -u origin main
